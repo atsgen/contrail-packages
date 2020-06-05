@@ -35,7 +35,7 @@
 %define         _enableMlx FALSE
 %endif
 
-%define         _kernel_dir /lib/modules/%{_kVers}/build
+%define         _kernel_dir /lib/modules/%{_dpdkKver}/build
 
 %if 0%{?_dpdk_build_dir:1}
 %define         _dpdk_args --dpdk-dir=%{_dpdk_build_dir}
